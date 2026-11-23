@@ -1,0 +1,37 @@
+{
+  "name": "dsh-image-gen",
+  "version": "0.1.0",
+  "description": "DSH 本地画图插件：内置 Qwen-Image 2.1 Turbo（stable-diffusion.cpp）引擎，调用时才拉起，闲置自动卸掉。",
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "scripts/",
+    "models/README.md",
+    "README.md",
+    "AGENTS.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["dsh", "dsh-plugin", "image-generation", "qwen-image", "gguf", "stable-diffusion.cpp"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bearx/dsh-qwen-imgen.git"
+  },
+  "homepage": "https://github.com/bearx/dsh-qwen-imgen#readme",
+  "bugs": {
+    "url": "https://github.com/bearx/dsh-qwen-imgen/issues"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  }
+}

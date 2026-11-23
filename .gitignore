@@ -1,0 +1,7 @@
+node_modules/
+models/
+*.tgz
+*.log
+image.log
+.venv/
+__pycache__/
